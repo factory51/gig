@@ -1,0 +1,4 @@
+[mysqld]
+ndbcluster
+[mysql_cluster]
+ndb-connectstring=10.133.59.159 # private ip address of the cluster manager

@@ -1,0 +1,2 @@
+[mysql_cluster]
+ndb-connectstring=10.133.59.159 # private Ip of management server
