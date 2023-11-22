@@ -29,7 +29,7 @@ sudo chmod +x task_1/replica/replica-setup.sh
 
 
 
-## Modifying Config to reflect local enviroment
+## Modifying Config to reflect local environment
 
 The config that will need to be changed for Primary setup is in `task_1/primary/primary-setup.sh` and should reflect your local setup.
 
@@ -41,8 +41,8 @@ MYSQL="/usr/bin/mysql" # PATH TO MYSQL (CRONTAB SAFE)
 MYSQL_USER="notroot" # [CHANGE] To Reflect MySQL Account in use for running script
 MYSQL_PASS="notpassword" # [CHANGE] To Reflect MySQL Account in use for running script
 MYSQL_PORT=5566
-REPLICA_USERNAME="replica" # [CHANGE] TO desried replcia username
-REPLICA_PASSWORD="replication_password" # [CHANGE] To desried replcia password
+REPLICA_USERNAME="replica" # [CHANGE] TO desried replica username
+REPLICA_PASSWORD="replication_password" # [CHANGE] To desried replica password
 ```
 
 The config that will need to be changed for Primary setup is in `task_1/replica/replica-setup.sh` and should reflect your local setup.
@@ -55,8 +55,8 @@ MYSQL="/usr/bin/mysql" # PATH TO MYSQL (CRONTAB SAFE)
 MYSQL_USER="notroot" # [CHANGE] To Reflect MySQL Account in use for running script
 MYSQL_PASS="notpassword" # [CHANGE] To Reflect MySQL Account in use for running script
 MYSQL_PORT=5566
-REPLICA_USERNAME="replica" # [CHANGE] TO specified replcia username
-REPLICA_PASSWORD="replication_password" # [CHANGE] To specified replcia password
+REPLICA_USERNAME="replica" # [CHANGE] TO specified replica username
+REPLICA_PASSWORD="replication_password" # [CHANGE] To specified replica password
 
 ```
 

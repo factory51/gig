@@ -34,7 +34,7 @@ sudo chmod +x task_2/sql-node/sql-node-setup.sh
 
 ## Management Node Installation
 
-To setup the Management Node, the IP address of the servers in your enviroment need to be changed to in the config file `task_2/manager-node/management.mysql.conf`
+To setup the Management Node, the IP address of the servers in your environment need to be changed to in the config file `task_2/manager-node/management.mysql.conf`
 
 What to change is highlighted below
 
@@ -95,7 +95,7 @@ Switch to the directory containing `data-node-setup.sh`
 sudo ./data-node-setup.sh
 ```
 
-These steps should be performed on each Data node in your enviroment.
+These steps should be performed on each Data node in your environment.
 
 ### SQL Node Installation
 

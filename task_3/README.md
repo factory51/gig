@@ -20,7 +20,7 @@ mysql -u USERNAME -pPASSWORD < task_3_test_data.sql
 
 ## Requirements
 
-Below is an explination of how the database handles the requirements indicated in the task.
+Below is an explanation of how the database handles the requirements indicated in the task.
 
 ### Manage Users
 
@@ -41,7 +41,7 @@ Below is an explination of how the database handles the requirements indicated i
 +------------------+------------------+------+-----+---------+----------------+
 ```
 
-- A user password table was created to remove the password hash from the users table, it also allows for multiple entires with a status of is_active. If the application doesn't want to allow users to re-use passwords, this can be used to compare the older stored hashes against new input.
+- A user password table was created to remove the password hash from the users table, it also allows for multiple entries with a status of is_active. If the application doesn't want to allow users to re-use passwords, this can be used to compare the older stored hashes against new input.
 
 ```
 +-------------+------------+------+-----+---------+----------------+
@@ -119,7 +119,7 @@ Access control was modelled around the application and CRUD. And assuming the ap
 +-----------+-------------+-----------------------------+
 ```
 
-- Example endpoints were added to the database in the table `application_endpoints` they mimic pages on application were user could interact with the database.
+- Example endpoints were added to the database in the table `application_endpoints`. They mimic pages on application were user could interact with the database.
 
 ```
 +-------------+-------------------------------+-------------------------+
@@ -146,9 +146,9 @@ select * from user_type_endpoint_actions where user_type_id = 1 ;
 
 ### Manage Bands / Tracks / Performers / Achievements
 
-Several assumptions where made when creating the structure to store information relating to music in general
+Several assumptions were made when creating the structure to store information relating to music in general
 
-- An album can either belong to a band (multiple members), to a solo artist, or can be a compliation of 
+- An album can either belong to a band (multiple members), to a solo artist, or can be a compilation of 
 multiple unrelated tracks by various artists, this is represented in the table `album_types`.
 
 ```
@@ -331,7 +331,7 @@ multiple unrelated tracks by various artists, this is represented in the table `
 +----------+--------------+----------------+
 ```
 
-- Awards belong to an over arching body that issues the award, this is mimiced by the table `award_body`
+- Awards belong to an overarching body that issues the award, this is mimicked by the table `award_body`
 
 ```
 +---------------+-------------+
@@ -355,7 +355,7 @@ multiple unrelated tracks by various artists, this is represented in the table `
 +---------------+------------------+
 ```
 
-- Available awards for each award body and award type is modeled in `awards`.
+- Available awards for each award body and award type is modelled in `awards`.
 
 ```
 +----------+---------------+------------------------------------+
@@ -417,7 +417,7 @@ multiple unrelated tracks by various artists, this is represented in the table `
 
 ```
 
-- User Orders are recored in the table `orders`.
+- User Orders are recorded in the table `orders`.
 
 ```
 +----------+---------+--------+
@@ -445,7 +445,7 @@ multiple unrelated tracks by various artists, this is represented in the table `
 ```
 
 
-- Orders items have a specific type, this is modelled in `item_types`, it indicates if the user is buying an ablum or a track on its own.
+- Orders items have a specific type, this is modelled in `item_types`, it indicates if the user is buying an album or a track on its own.
 
 ```
 +--------------+------------------+
